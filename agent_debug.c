@@ -59,7 +59,7 @@
 #endif
 
 
-#define DEFAULT_HOST "13.60.186.177"
+#define DEFAULT_HOST "Your instance ip"
 #define DEFAULT_PORT 4444
 #define MAX_PAYLOAD (10 * 1024 * 1024)
 #define CHUNK_SIZE 1024
