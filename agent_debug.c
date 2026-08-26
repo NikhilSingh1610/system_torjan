@@ -1,8 +1,4 @@
-/**
- * agent_complete.c - Complete C2 Agent with Auto-Start & Process Hollowing
- * Features: Stealth, Persistence, Process Hollowing, Two-Way Popup, Anti-Delete
- * FIXED: Hollowed agent now reconnects automatically
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
