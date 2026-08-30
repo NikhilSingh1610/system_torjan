@@ -2,7 +2,7 @@
 echo ========================================
 echo Building PHANTOM Agent - Extraordinary Edition
 echo ========================================
-echo system version 1.1.1
+echo system version 1.0.3
 
 REM Compile with maximum stealth
 gcc agent.c -o phantom.exe ^
